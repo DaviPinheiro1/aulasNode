@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Somando numeros</h1>
+    a:<input type="number" name="a" id="a"> <br>
+    b: <input type="number" name="b" id="b"> <br>
+
+    <button onclick="somar(document.getElementById('a').value, document.getElementById('b').value)">SOMAR</button>
+
+    <script>
+        function somar(a,b){
+            var sum = parseInt(a) + parseInt(b)
+            window.alert(sum)
+        }
+    </script>
+</body>
+</html>

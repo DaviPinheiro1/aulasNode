@@ -1,0 +1,17 @@
+body{
+    background-color: blanchedalmond;
+}
+
+p{
+    color: rgb(11, 38, 65);
+    font-family: Impact;
+    font-size: 120%;
+    /*border: 2px solid black ; */
+    
+}
+
+h1{
+    color: rgb(11, 38, 65);
+    font-family: Verdana;
+    font-size: 300%;
+}

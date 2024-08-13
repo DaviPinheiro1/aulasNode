@@ -1,0 +1,28 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Pagina onclick</h1>
+    <button id = "botao"> Clique aqui</button>
+    <p id ="demo"></p>
+    <script>
+        const elemento = document.getElementById("botao");
+
+        elemento.addEventListener("click", funcao);
+        elemento.addEventListener("mouseover", funcao2);        elemento.addEventListener("mouseout", funcao3);
+        function funcao(){
+            document.getElementById("demo").innerHTML += "Clicado <br>"
+        }
+        function funcao2(){
+            document.getElementById("demo").innerHTML += "Mouse over <br>"
+        }
+        function funcao3(){
+            document.getElementById("demo").innerHTML += "Mouse out <br>"
+        }
+    </script>
+</body>
+</html> 

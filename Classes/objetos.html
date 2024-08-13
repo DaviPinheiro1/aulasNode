@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P id ="demo"></P>
+
+    <button onclick="botao()" >Clique para saber o que o benicio é</button>
+
+    <p id ="btn"></p>
+
+    <script>
+         function botao(){
+            document.getElementById("btn").innerHTML = `${pessoa.skincolor}`;
+         }
+
+
+        const pessoa = new Object();
+        pessoa.firstname="benio",
+        pessoa.lastname="mozan",
+        pessoa.age=18,
+        pessoa.skincolor="preto" 
+
+        document.getElementById("demo").innerHTML = `${pessoa.firstname} ${pessoa.lastname} é...`;
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOB</title>
+</head>
+<body>
+    <a download="Teste de JS com blob.txt" href="#" id="link">Download</a>
+
+    <script>
+        let blob = new Blob(["BLOOB"], { type:'text/plain}'});
+        link.href = URL.createObjectURL(blob);
+    </script>
+</body>
+</html>

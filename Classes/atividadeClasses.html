@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conta</h1>
+    <p>Digite o saldo da sua conta</p>
+    <input type="number" name ="valor" id="valor">
+    <button id="botao" onclick="funcao()">salvar</button>
+    <button id="botaoo" onclick="funcao1()">mostrar saldo</button>
+
+    <script>
+        const conta = {
+            saldo: null,
+
+            get pegarSaldo(){
+                return this.saldo
+            },
+
+            set mudarSaldo(newSaldo){
+                this.saldo = newSaldo;
+            }
+        }
+
+        function funcao(){
+            conta.mudarSaldo = document.getElementById("valor").value;
+        }
+
+        function funcao1(){
+            window.alert(conta.pegarSaldo);
+        }
+    </script>
+
+</body>
+</html>
